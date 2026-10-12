@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ascending Social</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+max-width:500px;
+margin:auto;
+padding:20px;
+}
+
+.profile{
+text-align:center;
+margin-bottom:30px;
+}
+
+.verify{
+color:#1da1f2;
+}
+
+.post{
+background:#222;
+padding:15px;
+border-radius:15px;
+margin-top:20px;
+}
+
+button{
+background:#1da1f2;
+border:none;
+padding:10px 15px;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.stats{
+margin-top:10px;
+color:#ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile">
+<h1>Nirdosh ✅</h1>
+<p class="verify">CEO of Ascending Social</p>
+
+<p>
+Followers: 1,000,000
+</p>
+</div>
+
+<div class="post">
+
+<h3>My First Post 🚀</h3>
+
+<p>
+Welcome to Ascending Social.
+Built by me from scratch.
+</p>
+
+<button onclick="likePost()">
+❤️ Like
+</button>
+
+<div class="stats">
+Likes:
+<span id="likes">1000000</span>
+</div>
+
+</div>
+
+<script>
+
+let likes = 1000000;
+
+function likePost(){
+
+likes++;
+
+document.getElementById("likes").innerText = likes;
+
+}
+
+</script>
+
+</body>
+</html>
