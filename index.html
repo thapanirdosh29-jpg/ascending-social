@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Ascending</title>
-style.css
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-
-<button onclick="showPage('fyp')">
-🔥 For You
-</button>
-
-<button onclick="showPage('explore')">
-🌎 Explore
-</button>
-
-<button onclick="showPage('profile')">
-👤 Profile
-</button>
-
-</nav>
-
 <div id="fyp" class="page active">
 
-<h2>For You</h2>
+<h2>🔥 FOR YOU</h2>
 
 <div class="video">
-
 <h3>Mountain Adventure</h3>
-
 <p>🎵 Ascending Dreams</p>
-
-<p>👀 1.2M views</p>
+<p>👀 1.2M Views</p>
 
 <button onclick="earnCoins()">
 ❤️ Like
 </button>
 
+<button onclick="videoView()">
+👀 Watch
+</button>
 </div>
 
 <div class="video">
-
 <h3>Night Drive</h3>
-
 <p>🎵 Midnight City</p>
-
-<p>👀 950K views</p>
+<p>👀 850K Views</p>
 
 <button onclick="earnCoins()">
 ❤️ Like
 </button>
 
+<button onclick="videoView()">
+👀 Watch
+</button>
 </div>
 
 </div>
 
 <div id="explore" class="page">
 
-<h2>Explore</h2>
+<h2>🌍 Explore</h2>
 
 <div class="grid">
 
-<div class="box">📷 Travel</div>
 <div class="box">🎵 Music</div>
+<div class="box">📸 Photos</div>
 <div class="box">🎮 Gaming</div>
-<div class="box">⚽ Sports</div>
+<div class="box">🏀 Sports</div>
 <div class="box">🐱 Pets</div>
 <div class="box">🚗 Cars</div>
 
@@ -74,23 +62,61 @@ style.css
 
 </div>
 
+<div id="live" class="page">
+
+<h2>🔴 LIVE</h2>
+
+<div class="video">
+
+<h3>Nirdosh Live Stream</h3>
+
+<p>Viewers: 32,550</p>
+
+<button onclick="gift(10)">
+🌹 Rose
+</button>
+
+<button onclick="gift(50)">
+💎 Diamond
+</button>
+
+<button onclick="gift(500)">
+👑 Crown
+</button>
+
+</div>
+
+</div>
+
 <div id="profile" class="page">
 
-<h2>Nirdosh ✅</h2>
+<h1>Nirdosh ✅</h1>
 
-<p>👑 CEO of Ascending</p>
+<p>👑 Founder & CEO</p>
 
 <p>Followers: 1,000,000</p>
 
 <p>🪙 Coins: <span id="coins">5000</span></p>
 
-<p>⭐ Verified Founder</p>
+<p>⭐ Level: <span id="level">1</span></p>
 
 <button onclick="founderBoost()">
-CEO BOOST 🚀
+🚀 CEO BOOST
 </button>
 
 </div>
+
+<nav>
+
+<button onclick="showPage('fyp')">🔥</button>
+
+<button onclick="showPage('explore')">🌍</button>
+
+<button onclick="showPage('live')">🔴</button>
+
+<button onclick="showPage('profile')">👤</button>
+
+</nav>
 
 script.jsscript>
 
