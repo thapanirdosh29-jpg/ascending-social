@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ascending Social</title>
-
-<style>
-
-body{
-background:#111;
-color:white;
-font-family:Arial;
-max-width:500px;
-margin:auto;
-padding:20px;
-}
-
-.profile{
-text-align:center;
-margin-bottom:30px;
-}
-
-.verify{
-color:#1da1f2;
-}
-
-.post{
-background:#222;
-padding:15px;
-border-radius:15px;
-margin-top:20px;
-}
-
-button{
-background:#1da1f2;
-border:none;
-padding:10px 15px;
-color:white;
-border-radius:10px;
-cursor:pointer;
-}
-
-.stats{
-margin-top:10px;
-color:#ccc;
-}
-
-</style>
+<title>Ascending</title>
+style.css
 </head>
 
 <body>
 
-<div class="profile">
-<h1>Nirdosh ✅</h1>
-<p class="verify">CEO of Ascending Social</p>
+<nav>
 
-<p>
-Followers: 1,000,000
-</p>
-</div>
+<button onclick="showPage('fyp')">
+🔥 For You
+</button>
 
-<div class="post">
+<button onclick="showPage('explore')">
+🌎 Explore
+</button>
 
-<h3>My First Post 🚀</h3>
+<button onclick="showPage('profile')">
+👤 Profile
+</button>
 
-<p>
-Welcome to Ascending Social.
-Built by me from scratch.
-</p>
+</nav>
 
-<button onclick="likePost()">
+<div id="fyp" class="page active">
+
+<h2>For You</h2>
+
+<div class="video">
+
+<h3>Mountain Adventure</h3>
+
+<p>🎵 Ascending Dreams</p>
+
+<p>👀 1.2M views</p>
+
+<button onclick="earnCoins()">
 ❤️ Like
 </button>
 
-<div class="stats">
-Likes:
-<span id="likes">1000000</span>
+</div>
+
+<div class="video">
+
+<h3>Night Drive</h3>
+
+<p>🎵 Midnight City</p>
+
+<p>👀 950K views</p>
+
+<button onclick="earnCoins()">
+❤️ Like
+</button>
+
 </div>
 
 </div>
 
-<script>
+<div id="explore" class="page">
 
-let likes = 1000000;
+<h2>Explore</h2>
 
-function likePost(){
+<div class="grid">
 
-likes++;
+<div class="box">📷 Travel</div>
+<div class="box">🎵 Music</div>
+<div class="box">🎮 Gaming</div>
+<div class="box">⚽ Sports</div>
+<div class="box">🐱 Pets</div>
+<div class="box">🚗 Cars</div>
 
-document.getElementById("likes").innerText = likes;
+</div>
 
-}
+</div>
 
-</script>
+<div id="profile" class="page">
+
+<h2>Nirdosh ✅</h2>
+
+<p>👑 CEO of Ascending</p>
+
+<p>Followers: 1,000,000</p>
+
+<p>🪙 Coins: <span id="coins">5000</span></p>
+
+<p>⭐ Verified Founder</p>
+
+<button onclick="founderBoost()">
+CEO BOOST 🚀
+</button>
+
+</div>
+
+script.jsscript>
 
 </body>
 </html>
