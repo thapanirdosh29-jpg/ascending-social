@@ -6,33 +6,32 @@ function showPage(pageId){
 document
 .querySelectorAll(".page")
 .forEach(page=>{
-
 page.classList.remove("active");
-
 });
 
 document
 .getElementById(pageId)
 .classList.add("active");
-
 }
 
 function updateProfile(){
 
-document
-.getElementById("coins")
-.innerText = coins;
+const coinEl = document.getElementById("coins");
+const levelEl = document.getElementById("level");
 
-level = Math.floor(coins/1000);
+if(coinEl){
+coinEl.textContent = coins;
+}
+
+level = Math.floor(coins / 1000);
 
 if(level < 1){
 level = 1;
 }
 
-document
-.getElementById("level")
-.innerText = level;
-
+if(levelEl){
+levelEl.textContent = level;
+}
 }
 
 function earnCoins(){
@@ -42,7 +41,6 @@ coins += 10;
 updateProfile();
 
 alert("❤️ +10 Coins");
-
 }
 
 function videoView(){
@@ -52,7 +50,6 @@ coins += 5;
 updateProfile();
 
 alert("👀 +5 Coins");
-
 }
 
 function gift(amount){
@@ -61,7 +58,7 @@ coins += amount;
 
 updateProfile();
 
-alert("🎁 Gift received!");
+alert("🎁 Gift Received!");
 }
 
 function founderBoost(){
