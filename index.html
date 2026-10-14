@@ -1,125 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirdosh | My Links</title>
 
-<title>Ascending</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
 
-<link rel="stylesheet" href="style.css">
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f0f0f,#1e1e1e);
+  color:white;
+}
+
+.container{
+  width:90%;
+  max-width:400px;
+  text-align:center;
+}
+
+.profile{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid white;
+  margin-bottom:15px;
+}
+
+h1{
+  margin-bottom:8px;
+}
+
+.bio{
+  color:#bdbdbd;
+  margin-bottom:25px;
+}
+
+.link{
+  display:block;
+  text-decoration:none;
+  color:white;
+  background:#262626;
+  padding:15px;
+  margin:12px 0;
+  border-radius:15px;
+  transition:0.3s;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.link:hover{
+  transform:translateY(-3px);
+  background:#3b3b3b;
+}
+
+.footer{
+  margin-top:20px;
+  color:#888;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<div id="fyp" class="page active">
+<div class="container">
 
-<h2>🔥 FOR YOU</h2>
+<img src="profile.jpg" alt="Profile" class="profile">
 
-<div class="video">
-<h3>Mountain Adventure</h3>
-<p>🎵 Ascending Dreams</p>
-<p>👀 1.2M Views</p>
+<h1>Nirdosh</h1>
 
-<button onclick="earnCoins()">
-❤️ Like
-</button>
+<p class="bio">
+🎵 Music • Vibes • Creativity
+</p>
 
-<button onclick="videoView()">
-👀 Watch
-</button>
-</div>
-
-<div class="video">
-<h3>Night Drive</h3>
-<p>🎵 Midnight City</p>
-<p>👀 850K Views</p>
-
-<button onclick="earnCoins()">
-❤️ Like
-</button>
-
-<button onclick="videoView()">
-👀 Watch
-</button>
-</div>
-
-</div>
-
-<div id="explore" class="page">
-
-<h2>🌍 Explore</h2>
-
-<div class="grid">
-
-<div class="box">🎵 Music</div>
-<div class="box">📸 Photos</div>
-<div class="box">🎮 Gaming</div>
-<div class="box">🏀 Sports</div>
-<div class="box">🐱 Pets</div>
-<div class="box">🚗 Cars</div>
-
-</div>
-
-</div>
-
-<div id="live" class="page">
-
-<h2>🔴 LIVE</h2>
-
-<div class="video">
-
-<h3>Nirdosh Live Stream</h3>
-
-<p>Viewers: 32,550</p>
-
-<button onclick="gift(10)">
-🌹 Rose
-</button>
-
-<button onclick="gift(50)">
-💎 Diamond
-</button>
-
-<button onclick="gift(500)">
-👑 Crown
-</button>
-
-</div>
-
-</div>
-
-<div id="profile" class="page">
-
-<h1>Nirdosh ✅</h1>
-
-<p>👑 Founder & CEO</p>
-
-<p>Followers: 1,000,000</p>
-
-<p>🪙 Coins: <span id="coins">5000</span></p>
-
-<p>⭐ Level: <span id="level">1</span></p>
-
-<button onclick="founderBoost()">
-🚀 CEO BOOST
-</button>
-
-</div>
-
-<nav>
-
-<button onclick="showPage('fyp')">🔥</button>
-
-<button onclick="showPage('explore')">🌍</button>
-
-<button onclick="showPage('live')">🔴</button>
-
-<button onclick="showPage('profile')">👤</button>
-
-</nav>
-
-script.jsscript>
-``                       
-
-</body>
-</html>
+<a class="link" href="https://instagram.com/YOUR_
